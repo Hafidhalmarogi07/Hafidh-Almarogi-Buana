@@ -1,0 +1,6 @@
+/*
+!/www/
+/www/*
+!/www/index.html
+!/docker-compose.yml
+!/.env

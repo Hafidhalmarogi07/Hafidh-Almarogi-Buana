@@ -1,0 +1,16 @@
+{
+    "name": "app/docker-nginx-stack",
+    "description": "Docker Nginx Stack",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hafidh Almarogi",
+            "email": "almarogih@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "vendor-dir": "."
+    },
+    "minimum-stability": "dev"
+}

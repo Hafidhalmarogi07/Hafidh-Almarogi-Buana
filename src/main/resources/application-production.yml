@@ -1,0 +1,48 @@
+spring:
+  data:
+    rest:
+      basePath: /api
+  jpa:
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: false
+        format_sql: false
+    hibernate:
+      ddlAuto: update
+  jackson:
+    property_naming_strategy: SNAKE_CASE
+    serialization:
+      fail_on_empty_beans: false
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 200MB
+
+
+logging:
+  level:
+    root: FATAL
+    org:
+      springframework:
+        security: FATAL
+        web: FATAL
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      filter-order: 3
+  jwt:
+    enabled: true
+  role_hierarchy:
+    ROLE_SUPERUSER: [ ROLE_ADMIN ]
+    ROLE_ADMIN: [ ROLE_USER ]
+    ROLE_USER: [ ROLE_ANON ]
+
+management:
+  security:
+    enabled: true

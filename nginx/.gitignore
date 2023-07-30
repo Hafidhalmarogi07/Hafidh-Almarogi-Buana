@@ -1,0 +1,12 @@
+/*
+!/.gitignore
+!/.dockerignore
+!/www/
+/www/*
+!/www/index.html
+!/docker-compose.yml
+!/*.conf
+!/.env
+!/config/
+/vendor/
+!/*.json
